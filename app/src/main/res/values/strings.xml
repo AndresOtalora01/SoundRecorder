@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SoundRecorder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnSoundRecorder">Grabador de sonido</string>
+    <string name="btnVideoRecorder">Grabador de video</string>
+    <string name="btnCamera">Camara de fotos</string>
+</resources>

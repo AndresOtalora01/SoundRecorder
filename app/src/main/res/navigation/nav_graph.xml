@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/soundRecorderFragment"
+        android:name="otalora.rodriguez.andres.soundrecorder.ui.fragments.SoundRecorderFragment"
+        android:label="fragment_sound_recorder"
+        tools:layout="@layout/fragment_sound_recorder" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="otalora.rodriguez.andres.soundrecorder.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_soundRecorderFragment"
+            app:destination="@id/soundRecorderFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="otalora.rodriguez.andres.soundrecorder.ui.fragments.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" />
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="otalora.rodriguez.andres.soundrecorder.ui.fragments.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
+</navigation>
